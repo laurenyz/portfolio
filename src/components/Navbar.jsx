@@ -9,10 +9,12 @@ const Navbar = (props) => {
             <button onClick={handleOnClick}>About</button>
         </div>
     )
+
+    function handleOnClick() {
+        props.history.push('/portfolio/about')
+    }
 }
 
-function handleOnClick() {
-    this.props.history.push('/about')
-}
+
 
 export default withRouter(Navbar)
