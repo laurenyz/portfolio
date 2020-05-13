@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
+import Typography from '@material-ui/core/Typography'
 
 const Navbar = (props) => {
 
@@ -10,6 +11,7 @@ const Navbar = (props) => {
         <div>
             <AppBar position="static"> 
                     <Toolbar>
+                        <Typography onClick={handleOnClickHomepage} style={{cursor: "pointer"}}>Lauren Yu</Typography>
                         <Button onClick={handleOnClickProjects}>Projects</Button>
                         <Button onClick={handleOnClickResume}>Resume</Button>
                         <Button onClick={handleOnClickAbout}>About</Button>
@@ -19,6 +21,10 @@ const Navbar = (props) => {
             </AppBar>
         </div>
     )
+    
+    function handleOnClickHomepage() {
+        props.history.push('/')
+    }
 
     function handleOnClickProjects() {
         props.history.push('/projects')
