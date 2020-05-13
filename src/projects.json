@@ -1,0 +1,82 @@
+{
+    "projects":[
+        {
+            "id": 1,
+            "name": "mathLab",
+            "demo_url": "",
+            "github": {
+                "frontend": "https://github.com/laurenyz/mathLab-frontend",
+                "backend": "https://github.com/laurenyz/mathLab-backend"
+            },
+            "languages": ["Ruby, Javascript"],
+            "backend": "Ruby on Rails",
+            "frontend": "React",
+            "libraries": ["Redux", "Thunk", "Action Cable", "Active Storage", "Material-Ui", "React-to-Print", "bcrypt"],
+            "description": "mathLab is a resource for math students and teachers. It has two main features: a math forum, and a live-editing document. Without logging in, users can view posts and replies, as well as create and share “scratchpads” (live-editing documents). Once logged in, users can create posts, create replies, and can upvote replies. Users can also save scratchpads, which they can access in their account along with their published posts. Finally, users can update profile pictures which update on the frontend right away and persist in the backend (stored in Cloudinary)."
+            
+        },
+        {
+            "id": 2,
+            "name": "portfolio",
+            "demo_url": "",
+            "github": "https://github.com/laurenyz/portfolio",
+            "languages": ["Javascript"],
+            "backend": "",
+            "frontend": "React",
+            "libraries": ["Material-Ui"],
+            "description": "My portfolio"
+        },
+        {
+            "id": 3,
+            "name": "Stargazers",
+            "demo_url": "",
+            "github": {
+                "frontend": "https://github.com/matteoaricci/stargazers-frontend",
+                "backend": "https://github.com/matteoaricci/stargazers-backend"
+            },
+            "languages": ["Ruby, Javascript"],
+            "backend": "Ruby on Rails",
+            "frontend": "React",
+            "libraries": ["Redux", "Bootstrap", "bcrypt"],
+            "description": "A collaborative project that was built to explore the functionality of React. Users can search through constellations, planets, and astrological signs, they can favorite specific constellations and planets and they can search for other users with common interests."
+        },
+        {
+            "id": 4,
+            "name": "BounceAround",
+            "demo_url": "",
+            "github": {
+                "frontend": "https://github.com/matteoaricci/bouncearound/tree/master/bounce-frontend",
+                "backend": "https://github.com/matteoaricci/bouncearound/tree/master/bounce-backend"
+            },
+            "languages": ["Ruby, Javascript"],
+            "backend": "Ruby on Rails",
+            "frontend": "Vanilla Javascript",
+            "libraries": ["P5", "bcrypt"],
+            "description": "A collaborative project that was built to explore the fundamentals of vanilla Javascript and DOM manipulation. This is a basic game where users must draw barriers to get a ball from its initial start point to the end goal"
+        },
+        {
+            "id": 5,
+            "name": "Fetch",
+            "demo_url": "",
+            "github": "https://github.com/laurenyz/fetch",
+            "languages": ["Ruby"],
+            "backend": "Ruby on Rails",
+            "frontend": "Ruby on Rails",
+            "libraries": ["bcrypt"],
+            "description": "Fetch is a pet sitting app with login features for pet owners and pet sitters (aka PetXperts).  Pet owners can view available services and PetXperts in their area and can book appointments."
+            
+        },
+        {
+            "id": 6,
+            "name": "Zombo",
+            "demo_url": "",
+            "github": "https://github.com/IdleScV/ZOMBO",
+            "languages": ["Ruby"],
+            "backend": "",
+            "frontend": "",
+            "libraries": ["Faker"],
+            "description": "mathLab is a resource for math students and teachers.  It has two main features: a math forum, and a live-editing document.  Without logging in, users can view posts and replies, as well as create and share “scratchpads” (live-editing documents).  Once logged in, users can create posts, create replies, and can upvote replies.  Users can also save scratchpads, which they can access in their account along with their published posts.  Finally, users can update profile pictures which update on the frontend right away and persist in the backend (stored in Cloudinary)."
+            
+        }
+    ]
+}
