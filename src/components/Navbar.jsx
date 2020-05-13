@@ -1,12 +1,18 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = (props) => {
 
     return(
         <div>
             Navbar
+            <button onClick={handleOnClick}>About</button>
         </div>
     )
 }
 
-export default Navbar
+function handleOnClick() {
+    this.props.history.push('/about')
+}
+
+export default withRouter(Navbar)
