@@ -17,10 +17,10 @@ function App() {
       <Navbar />
       <Switch>
           <Route exact path='/portfolio' component = {Homescreen} />  
-          <Route exact path = 'portfolio/projects/:id' component = {ProjectShowPage} />  
-          <Route exact path='portfolio/projects' component = {ProjectsContainer} />  
-          <Route exact path = 'portfolio/about' component = {AboutMeContainer} /> 
-          <Route exact path = 'portfolio/contact' component = {ContactContainer} /> 
+          <Route exact path = '/portfolio/projects/:id' component = {ProjectShowPage} />  
+          <Route exact path='/portfolio/projects' component = {ProjectsContainer} />  
+          <Route exact path = '/portfolio/about' component = {AboutMeContainer} /> 
+          <Route exact path = '/portfolio/contact' component = {ContactContainer} /> 
       </Switch>
     </div>
    )
