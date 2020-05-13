@@ -16,9 +16,9 @@ function App() {
       This is my app
       <Navbar />
       <Switch>
-          <Route exact path = '/' component = {Homescreen} />  
-          <Route exact path = '/projects/:id' component = {ProjectShowPage} />  
-          <Route exact path = '/projects' component = {ProjectsContainer} />  
+          <Route path={process.env.PUBLIC_URL + '/'} component = {Homescreen} />  
+          <Route path={process.env.PUBLIC_URL + '/projects/:id'} component = {ProjectShowPage} />  
+          <Route path={process.env.PUBLIC_URL + '/projects'} component = {ProjectsContainer} />  
           <Route exact path = '/about' component = {AboutMeContainer} /> 
           <Route exact path = '/contact' component = {ContactContainer} /> 
       </Switch>
