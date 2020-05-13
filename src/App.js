@@ -13,7 +13,6 @@ import Homescreen from './containers/Homescreen'
 function App() {
   return (
     <div>
-      This is my app
       <Navbar />
       <Switch>
           <Route exact path='/' component = {Homescreen} />  
