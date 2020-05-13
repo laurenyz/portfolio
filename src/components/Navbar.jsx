@@ -11,7 +11,7 @@ const Navbar = (props) => {
     )
 
     function handleOnClick() {
-        props.history.push('/portfolio/about')
+        props.history.push('/about')
     }
 }
 

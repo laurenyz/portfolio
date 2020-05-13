@@ -16,11 +16,11 @@ function App() {
       This is my app
       <Navbar />
       <Switch>
-          <Route exact path='/portfolio' component = {Homescreen} />  
-          <Route exact path = '/portfolio/projects/:id' component = {ProjectShowPage} />  
-          <Route exact path='/portfolio/projects' component = {ProjectsContainer} />  
-          <Route exact path = '/portfolio/about' component = {AboutMeContainer} /> 
-          <Route exact path = '/portfolio/contact' component = {ContactContainer} /> 
+          <Route exact path='/' component = {Homescreen} />  
+          <Route exact path = '/projects/:id' component = {ProjectShowPage} />  
+          <Route exact path='/projects' component = {ProjectsContainer} />  
+          <Route exact path = '/about' component = {AboutMeContainer} /> 
+          <Route exact path = '/contact' component = {ContactContainer} /> 
       </Switch>
     </div>
    )
