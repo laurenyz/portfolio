@@ -16,11 +16,11 @@ function App() {
       This is my app
       <Navbar />
       <Switch>
-          <Route path={process.env.PUBLIC_URL + '/'} component = {Homescreen} />  
-          <Route path={process.env.PUBLIC_URL + '/projects/:id'} component = {ProjectShowPage} />  
-          <Route path={process.env.PUBLIC_URL + '/projects'} component = {ProjectsContainer} />  
-          <Route exact path = '/about' component = {AboutMeContainer} /> 
-          <Route exact path = '/contact' component = {ContactContainer} /> 
+          <Route exact path='/portfolio' component = {Homescreen} />  
+          <Route exact path = 'portfolio/projects/:id' component = {ProjectShowPage} />  
+          <Route exact path='portfolio/projects' component = {ProjectsContainer} />  
+          <Route exact path = 'portfolio/about' component = {AboutMeContainer} /> 
+          <Route exact path = 'portfolio/contact' component = {ContactContainer} /> 
       </Switch>
     </div>
    )
