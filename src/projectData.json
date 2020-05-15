@@ -11,7 +11,7 @@
             "languages": ["Ruby, Javascript"],
             "backend": "Ruby on Rails",
             "frontend": "React",
-            "libraries": ["Redux", "Thunk", "Action Cable", "Active Storage", "Material-Ui", "React-to-Print", "bcrypt"],
+            "libraries": ["Redux", "Thunk", "Action Cable", "Active Storage", "Material-Ui", "React-to-Print", "bcrypt", "JWT token"],
             "description": "A resource for math students and teachers, mathLab has two main features: a math forum, and a live-editing document. Without logging in, users can view posts and replies, as well as create and share “scratchpads” (live-editing documents). Once logged in, users can create posts, create replies, and can upvote replies. Users can also save scratchpads, which they can access in their account along with their published posts. Users can collaborate with others on scratchpad documents by sharing the document's URL. Finally, users can update profile pictures and other account data, which update on the frontend right away and persist in the backend (stored in Cloudinary)."
             
         },
@@ -37,7 +37,7 @@
             "languages": ["Ruby, Javascript"],
             "backend": "Ruby on Rails",
             "frontend": "React",
-            "libraries": ["Redux", "Bootstrap", "bcrypt"],
+            "libraries": ["Bootstrap", "bcrypt", "JWT token"],
             "description": "A collaborative project that was built to explore the functionality of React, Stargazers is a site meant to connect users based on their love of planets, constellations, and astrological signs. Users can favorite specific constellations and planets, and they can search for other users with common interests."
         },
         {
