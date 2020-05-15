@@ -8,6 +8,7 @@ import AboutMeContainer from './containers/AboutMeContainer'
 import ContactContainer from './containers/ContactContainer'
 import ProjectShowPage from './containers/ProjectShowPage'
 import Homescreen from './containers/Homescreen'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route exact path = '/about' component = {AboutMeContainer} /> 
           <Route exact path = '/contact' component = {ContactContainer} /> 
       </Switch>
+      <Footer />
     </div>
    )
 }

@@ -27,7 +27,7 @@ const ProjectCard = (props) => {
             <CardMedia
                 className={classes.media}
                 image={require(`../assets/images/${props.project.name}.png`)}
-                title="mathLab"
+                title={props.project.name}
             />
             ProjectCard
             {props.project.name}

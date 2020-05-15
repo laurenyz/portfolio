@@ -1,10 +1,11 @@
 import React from 'react'
+import Typography from '@material-ui/core/Typography'
 
 const Homescreen = () => {
 
     return(
         <div>
-            Homescreen
+            <Typography>Web Developer | Musician</Typography>
         </div>
     )
 }

@@ -4,19 +4,38 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
+import Grid from '@material-ui/core/Grid'
 
 const Navbar = (props) => {
 
     return(
         <div>
-            <AppBar position="static"> 
+            <AppBar position="static" style={{marginBottom: "20px"}}> 
                     <Toolbar>
-                        <Typography onClick={handleOnClickHomepage} style={{cursor: "pointer"}}>Lauren Yu</Typography>
-                        <Button onClick={handleOnClickProjects}>Projects</Button>
-                        <Button onClick={handleOnClickResume}>Resume</Button>
-                        <Button onClick={handleOnClickAbout}>About</Button>
-                        <Button onClick={handleOnClickBlog}>Blog</Button>
-                        <Button onClick={handleOnClickContact}>Contact</Button>
+                        <Grid container justify="space-between" alignItems="center">
+                            <Grid item>
+                                <Typography onClick={handleOnClickHomepage} style={{cursor: "pointer"}}>Lauren Yu</Typography>
+                            </Grid>
+                            <Grid item>
+                                <Grid container>
+                                    <Grid item>
+                                        <Button onClick={handleOnClickProjects}>Projects</Button>
+                                    </Grid>
+                                    <Grid item>
+                                        <Button onClick={handleOnClickResume}>Resume</Button>
+                                    </Grid>
+                                    <Grid item>
+                                        <Button onClick={handleOnClickAbout}>About</Button>
+                                    </Grid>
+                                    <Grid item>
+                                        <Button onClick={handleOnClickBlog}>Blog</Button>
+                                    </Grid>
+                                    <Grid item>
+                                        <Button onClick={handleOnClickContact}>Contact</Button>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+                        </Grid>
                     </Toolbar>
             </AppBar>
         </div>
