@@ -63,7 +63,7 @@
             "backend": "Ruby on Rails",
             "frontend": "Ruby on Rails",
             "libraries": ["bcrypt"],
-            "description": "Fetch is a pet sitting web application with login features for pet owners and pet sitters (aka PetXperts).  Pet owners can view available services and PetXperts in their area and can book appointments."
+            "description": "A project meant to explore Ruby on Rails, Fetch is a pet sitting web application with login features for pet owners and pet sitters (aka PetXperts). Pet owners can view available services and profiles for local PetXperts; when they find one they like, they can book an appointment linked to a specific pet's profile. PetXperts can see upcoming appointments, and can edit services offered."
             
         },
         {
