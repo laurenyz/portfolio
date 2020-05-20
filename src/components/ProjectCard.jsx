@@ -3,6 +3,7 @@ import HUE from '@material-ui/core/colors/green';
 import Card from '@material-ui/core/Card'
 import CardMedia from '@material-ui/core/CardMedia'
 import { makeStyles } from '@material-ui/core/styles'
+import { withRouter } from "react-router-dom"
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -25,6 +26,7 @@ const ProjectCard = (props) => {
     return(
         <Card className={classes.root} variant = "outlined" >
             <CardMedia
+                onClick = {() => handleOnClick(props.project.id)}
                 className={classes.media}
                 image={require(`../assets/images/${props.project.name}.png`)}
                 title={props.project.name}
@@ -33,6 +35,9 @@ const ProjectCard = (props) => {
             {props.project.name}
         </Card>
     )
+function handleOnClick(projectId){
+  props.history.push(`/projects/${projectId}`)
+}
 }
 
-export default ProjectCard
+export default withRouter(ProjectCard)

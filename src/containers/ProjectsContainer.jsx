@@ -3,6 +3,7 @@ import ProjectCard from '../components/ProjectCard'
 import projectData from '../projectData.json'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
+import { uuid } from 'uuidv4';
 
 const ProjectsContainer = () => {
 
@@ -31,17 +32,9 @@ const ProjectsContainer = () => {
                     <Typography>Postgres</Typography>
                 </Grid>
             </Grid>
-            
-           
-           
-            
-           
-           
-           
-
 
             <Grid container spacing={1}>
-            {projectData.projects.map(project => <Grid item xs={4}><ProjectCard key={project.id} project={project} /></Grid>)}
+            {projectData.projects.map(project => <Grid key={uuid()} item xs={4}><ProjectCard key={project.id} project={project} /></Grid>)}
             </Grid>
             
         </div>
