@@ -1,0 +1,63 @@
+[
+    {
+        "imgName": "Bills.jpg",
+        "title": "Bills",
+        "cols": 1    
+    },
+    {
+        "imgName": "Tyrion.jpeg",
+        "title": "Tyrion",
+        "cols": 1    
+    },
+    {
+        "imgName": "TheBreakingWinds.jpg",
+        "title": "The Breaking Winds",
+        "cols": 2    
+    },
+    {
+        "imgName": "LordOfTheRings.jpg",
+        "title": "Hobbiton",
+        "cols": 2    
+    },
+    {
+        "imgName": "Travel.jpg",
+        "title": "Travel",
+        "cols": 1,
+        "rows": 1  
+    },
+    {
+        "imgName": "ChickenWings.jpg",
+        "title": "Chicken Wings",
+        "cols": 1    
+    },
+    {
+        "imgName": "Wedding.jpg",
+        "title": "Chris & Lauren",
+        "cols": 1    
+    },
+    {
+        "imgName": "Skydiving.jpeg",
+        "title": "Skydiving",
+        "cols": 1    
+    },
+    {
+        "imgName": "MachuPicchu.jpg",
+        "title": "Machu Picchu",
+        "cols": 2    
+    },
+    {
+        "imgName": "Chinatown.jpg",
+        "title": "NYC Chinatown",
+        "cols": 2    
+    },
+    {
+        "imgName": "Apples.jpg",
+        "title": "Apples",
+        "cols": 1    
+    },
+    {
+        "imgName": "Math.jpg",
+        "title": "Math",
+        "cols": 1    
+    }
+]

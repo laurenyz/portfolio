@@ -6,54 +6,63 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import IconButton from '@material-ui/core/IconButton'
+import { withRouter } from 'react-router-dom'
 
-const Footer = () => (
-  <div style={{ maxWidth: 700, margin: "auto", textAlign: "center", paddingBottom: 20 }}>
-    <Grid container justify={"center"} spacing={2}>
+const Footer = (props) => {
+    return (
+<div style={{ maxWidth: 700, margin: "auto", textAlign: "center", paddingBottom: 20 }}>
+    <Grid container justify={"center"} spacing={2} style={{paddingTop: 20}}>
       <Grid item>
-          <IconButton>
+          <IconButton href="mailto:laurenkyu@gmail.com">
           <MailOutlineIcon />
           </IconButton>
       </Grid>
       <Grid item >
-        <IconButton>
+        <IconButton onClick={handleOnClickLinkedIn}>
             <LinkedInIcon />
         </IconButton>
       </Grid>
       <Grid item>
-          <IconButton>
-          <GitHubIcon />
+          <IconButton onClick={handleOnClickGithub}>
+            <GitHubIcon />
           </IconButton>
       </Grid>
-      {/* <Grid item xs={12} sm={6} md={3}>
-        <Typography align={"center"} gutterBottom color={"textSecondary"}>
-          Contact us
-        </Typography>
-      </Grid> */}
        <Grid item>
-           <IconButton >
+           <IconButton onClick={handleOnClickMedium} >
                 <img src={require(`../assets/images/icons/mediumIcon.svg`)} alt="medium icon" style={{height: "22px", width: "22px"}}  />
            </IconButton>
        
       </Grid>
       <Grid item>
-          <IconButton>
+          <IconButton onClick={handleOnClickPowerToFly}>
                 <img src={require(`../assets/images/icons/powerToFlyIcon.svg`)} alt="medium icon" style={{height: "22px", width: "22px"}}  />
           </IconButton>
            
        
       </Grid>
     </Grid>
-    <Divider style={{ margin: "10px auto", width: 60 }} />
+    <Divider style={{ margin: "5px auto", width: 60 }} />
     <Typography variant="caption" align={"center"}>
       © {new Date().getFullYear()} Lauren Yu
     </Typography>
   </div>
-);
+    )
+  
+  function handleOnClickLinkedIn(){
+    window.open('https://www.linkedin.com/in/laurenkyu/')
+  }
 
-Footer.propTypes = {};
-Footer.defaultProps = {};
+  function handleOnClickGithub(){
+    window.open('https://github.com/laurenyz')
+  }
+  
+  function handleOnClickMedium(){
+    window.open('https://medium.com/@laurenkyu')
+  }
 
-export default Footer;
+  function handleOnClickPowerToFly(){
+    window.open('https://powertofly.com/talents/laurenyu')
+  }
+};
 
-
+export default withRouter(Footer);

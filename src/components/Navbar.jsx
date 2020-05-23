@@ -10,11 +10,11 @@ const Navbar = (props) => {
 
     return(
         <div>
-            <AppBar position="static" style={{marginBottom: "20px"}}> 
+            <AppBar position="static" style={{background: 'transparent', boxShadow: 'none'}}> 
                     <Toolbar>
                         <Grid container justify="space-between" alignItems="center">
                             <Grid item>
-                                <Typography onClick={handleOnClickHomepage} style={{cursor: "pointer"}}>Lauren Yu</Typography>
+                                <Typography onClick={handleOnClickHomepage} style={{cursor: "pointer", color:"#000000"}}>Lauren Yu</Typography>
                             </Grid>
                             <Grid item>
                                 <Grid container>

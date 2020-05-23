@@ -8,10 +8,10 @@
                 "frontend": "https://github.com/laurenyz/mathLab-frontend",
                 "backend": "https://github.com/laurenyz/mathLab-backend"
             },
-            "languages": ["Ruby, Javascript"],
+            "languages": ["Ruby, JavaScript"],
             "backend": "Ruby on Rails",
             "frontend": "React",
-            "libraries": ["Redux", "Thunk", "Action Cable", "Active Storage", "Material-Ui", "React-to-Print", "bcrypt", "JWT token"],
+            "libraries": ["Redux", "Thunk", "Action Cable", "Active Storage", "Material-UI", "React-to-Print", "bcrypt", "JWT token"],
             "description": "A resource for math students and teachers, mathLab has two main features: a math forum, and a live-editing document. Without logging in, users can view posts and replies, as well as create and share “scratchpads” (live-editing documents). Once logged in, users can create posts, create replies, and can upvote replies. Users can also save scratchpads, which they can access in their account along with their published posts. Users can collaborate with others on scratchpad documents by sharing the document's URL. Finally, users can update profile pictures and other account data, which update on the frontend right away and persist in the backend (stored in Cloudinary)."
             
         },
@@ -20,10 +20,10 @@
             "name": "portfolio",
             "demo_url": "https://youtu.be/86oJGqlPe60",
             "github": "https://github.com/laurenyz/portfolio",
-            "languages": ["Javascript"],
+            "languages": ["JavaScript"],
             "backend": "",
             "frontend": "React",
-            "libraries": ["Material-Ui"],
+            "libraries": ["Material-UI"],
             "description": "My portfolio"
         },
         {
@@ -34,7 +34,7 @@
                 "frontend": "https://github.com/matteoaricci/stargazers-frontend",
                 "backend": "https://github.com/matteoaricci/stargazers-backend"
             },
-            "languages": ["Ruby, Javascript"],
+            "languages": ["Ruby, JavaScript"],
             "backend": "Ruby on Rails",
             "frontend": "React",
             "libraries": ["Bootstrap", "bcrypt", "JWT token"],
@@ -48,11 +48,11 @@
                 "frontend": "https://github.com/matteoaricci/bouncearound/tree/master/bounce-frontend",
                 "backend": "https://github.com/matteoaricci/bouncearound/tree/master/bounce-backend"
             },
-            "languages": ["Ruby, Javascript"],
+            "languages": ["Ruby, JavaScript"],
             "backend": "Ruby on Rails",
-            "frontend": "Javascript",
+            "frontend": "JavaScript",
             "libraries": ["P5", "bcrypt"],
-            "description": "A collaborative project that was built to explore the fundamentals of vanilla Javascript and DOM manipulation. This is a basic game where users must draw barriers to get a ball from its initial start point to the end goal"
+            "description": "A collaborative project that was built to explore the fundamentals of vanilla JavaScript and DOM manipulation. This is a basic game where users must draw barriers to get a ball from its initial start point to the end goal"
         },
         {
             "id": 5,
