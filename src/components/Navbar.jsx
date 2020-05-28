@@ -10,7 +10,7 @@ const Navbar = (props) => {
 
     return(
         <div>
-            <AppBar position="static" style={{background: 'transparent', boxShadow: 'none'}}> 
+            <AppBar position="static" style={{background: 'transparent', boxShadow: 'none', marginBottom:"20px"}}> 
                     <Toolbar>
                         <Grid container justify="space-between" alignItems="center">
                             <Grid item>
