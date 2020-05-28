@@ -21,7 +21,7 @@ const theme = createMuiTheme({
         "Open Sans",
         'sans-serif',
       ].join(','),
-    }
+    },
   });
 
 export default theme

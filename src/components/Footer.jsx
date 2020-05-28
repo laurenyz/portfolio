@@ -22,7 +22,6 @@ const Footer = (props) => {
   const classes = useStyles();
     return (
 <div style={{margin: "auto", textAlign: "center", paddingBottom: 20 }} className={classes.root}>
-<Divider style={{ margin: "5px auto", width: "full" }} />
     <Grid container justify={"center"} spacing={2} style={{paddingTop: 10}}>
       <Grid item>
           <IconButton href="mailto:laurenkyu@gmail.com" className={classes.white}>
@@ -53,7 +52,7 @@ const Footer = (props) => {
        
       </Grid>
     </Grid>
-    <Divider style={{ margin: "5px auto", width: 60 }} className={classes.white}/>
+    <Divider style={{ margin: "5px auto", width: 60, backgroundColor: "#F8F8F8"}} />
     <Typography variant="caption" align={"center"} className={classes.white}>
       © {new Date().getFullYear()} Lauren Yu
     </Typography>
