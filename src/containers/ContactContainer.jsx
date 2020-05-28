@@ -4,7 +4,7 @@ const ContactContainer = () => {
 
     return(
         <div>
-            ContactContainer
+            <img src={require(`../assets/images/mailbox.jpg`)} style={{width: "100%", margin: "auto", height: "auto"}} alt="Washington, DC" />
         </div>
     )
 }
