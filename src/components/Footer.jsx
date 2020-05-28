@@ -10,32 +10,33 @@ import { withRouter } from 'react-router-dom'
 
 const Footer = (props) => {
     return (
-<div style={{ maxWidth: 700, margin: "auto", textAlign: "center", paddingBottom: 20 }}>
-    <Grid container justify={"center"} spacing={2} style={{paddingTop: 20}}>
+<div style={{margin: "auto", textAlign: "center", paddingBottom: 20 }}>
+<Divider style={{ margin: "5px auto", width: "full" }} />
+    <Grid container justify={"center"} spacing={2} style={{paddingTop: 10}}>
       <Grid item>
           <IconButton href="mailto:laurenkyu@gmail.com">
-          <MailOutlineIcon />
+          <MailOutlineIcon fontSize="small" />
           </IconButton>
       </Grid>
       <Grid item >
-        <IconButton onClick={handleOnClickLinkedIn}>
-            <LinkedInIcon />
+        <IconButton onClick={handleOnClickLinkedIn} size="medium">
+            <LinkedInIcon fontSize="small" />
         </IconButton>
       </Grid>
       <Grid item>
           <IconButton onClick={handleOnClickGithub}>
-            <GitHubIcon />
+            <GitHubIcon fontSize="small"/>
           </IconButton>
       </Grid>
        <Grid item>
            <IconButton onClick={handleOnClickMedium} >
-                <img src={require(`../assets/images/icons/mediumIcon.svg`)} alt="medium icon" style={{height: "22px", width: "22px"}}  />
+                <img src={require(`../assets/images/icons/mediumIcon.svg`)} alt="medium icon" style={{height: "18px", width: "18px"}}  />
            </IconButton>
        
       </Grid>
       <Grid item>
           <IconButton onClick={handleOnClickPowerToFly}>
-                <img src={require(`../assets/images/icons/powerToFlyIcon.svg`)} alt="medium icon" style={{height: "22px", width: "22px"}}  />
+                <img src={require(`../assets/images/icons/powerToFlyIcon.svg`)} alt="medium icon" style={{height: "18px", width: "18px"}}  />
           </IconButton>
            
        

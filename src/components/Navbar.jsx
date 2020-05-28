@@ -14,7 +14,7 @@ const Navbar = (props) => {
                     <Toolbar>
                         <Grid container justify="space-between" alignItems="center">
                             <Grid item>
-                                <Typography onClick={handleOnClickHomepage} style={{cursor: "pointer", color:"#000000"}}>Lauren Yu</Typography>
+                                <Typography onClick={handleOnClickHomepage} style={{cursor: "pointer", color:"#000000", fontFamily: "Montserrat, sans-serif", paddingTop:"10px"}} variant = "h3">LAUREN YU</Typography>
                             </Grid>
                             <Grid item>
                                 <Grid container>
