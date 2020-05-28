@@ -15,7 +15,7 @@ import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    minHeight: 480,
+    minHeight: 500,
   },
 }));
 
@@ -25,18 +25,17 @@ function App(props){
     <div>
       <Navbar />
       <Container className={classes.root}>
-      <Switch>
-          <Route exact path='/' component = {Homescreen} />  
-          <Route exact path = '/projects/:id' render = {(props)=> {
-                let projectId = parseInt(props.match.params.id)
-                let project = projectData.projects.find(p => p.id === projectId)
-                return <ProjectShowPage project = {project}/> }} />
-          <Route exact path='/projects' component = {ProjectsContainer} />  
-          <Route exact path = '/about' component = {AboutMeContainer} /> 
-          <Route exact path = '/contact' component = {ContactContainer} /> 
-      </Switch>
+        <Switch>
+            <Route exact path='/' component = {Homescreen} />  
+            <Route exact path = '/projects/:id' render = {(props)=> {
+                  let projectId = parseInt(props.match.params.id)
+                  let project = projectData.projects.find(p => p.id === projectId)
+                  return <ProjectShowPage project = {project}/> }} />
+            <Route exact path='/projects' component = {ProjectsContainer} />  
+            <Route exact path = '/about' component = {AboutMeContainer} /> 
+            <Route exact path = '/contact' component = {ContactContainer} /> 
+        </Switch>
       </Container>
-     
       <Footer />
     </div>
    )
