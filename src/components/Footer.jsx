@@ -7,24 +7,35 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import IconButton from '@material-ui/core/IconButton'
 import { withRouter } from 'react-router-dom'
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    background: "#666666"
+  },
+  white: {
+    color: "#F8F8F8"
+  }
+}));
 
 const Footer = (props) => {
+  const classes = useStyles();
     return (
-<div style={{margin: "auto", textAlign: "center", paddingBottom: 20 }}>
+<div style={{margin: "auto", textAlign: "center", paddingBottom: 20 }} className={classes.root}>
 <Divider style={{ margin: "5px auto", width: "full" }} />
     <Grid container justify={"center"} spacing={2} style={{paddingTop: 10}}>
       <Grid item>
-          <IconButton href="mailto:laurenkyu@gmail.com">
+          <IconButton href="mailto:laurenkyu@gmail.com" className={classes.white}>
           <MailOutlineIcon fontSize="small" />
           </IconButton>
       </Grid>
       <Grid item >
-        <IconButton onClick={handleOnClickLinkedIn} size="medium">
+        <IconButton onClick={handleOnClickLinkedIn} size="medium" className={classes.white}>
             <LinkedInIcon fontSize="small" />
         </IconButton>
       </Grid>
       <Grid item>
-          <IconButton onClick={handleOnClickGithub}>
+          <IconButton onClick={handleOnClickGithub} className={classes.white}>
             <GitHubIcon fontSize="small"/>
           </IconButton>
       </Grid>
@@ -42,8 +53,8 @@ const Footer = (props) => {
        
       </Grid>
     </Grid>
-    <Divider style={{ margin: "5px auto", width: 60 }} />
-    <Typography variant="caption" align={"center"}>
+    <Divider style={{ margin: "5px auto", width: 60 }} className={classes.white}/>
+    <Typography variant="caption" align={"center"} className={classes.white}>
       © {new Date().getFullYear()} Lauren Yu
     </Typography>
   </div>
