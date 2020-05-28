@@ -9,20 +9,20 @@
 //             <Grid container>
 //                 <Grid item xs={2} />
 //                 <Grid item xs={8}>
-//                     <Grid container direction="column" spacing={1}>
-//                         <Grid item>
-//                             <Typography>music music music music music music music music music music music music music music music music music music music music music </Typography>
-//                         </Grid>
-//                         <Grid item>
-//                             <Typography>math teaching math teaching math teaching math teaching math teaching math teaching math teaching math teaching math teaching </Typography>
-//                         </Grid>
-//                         <Grid item>
-//                             <Typography>code code code code code code code code code code code code code code code code code code code code code code code code code code </Typography>
-//                         </Grid>
-//                         <Grid item>
-//                             <Typography>cats lord of the rings travel sudoku cats lord of the rings travel sudoku </Typography>
-//                         </Grid>
-//                     </Grid>
+                    // <Grid container direction="column" spacing={1}>
+                    //     <Grid item>
+                    //         <Typography>music music music music music music music music music music music music music music music music music music music music music </Typography>
+                    //     </Grid>
+                    //     <Grid item>
+                    //         <Typography>math teaching math teaching math teaching math teaching math teaching math teaching math teaching math teaching math teaching </Typography>
+                    //     </Grid>
+                    //     <Grid item>
+                    //         <Typography>code code code code code code code code code code code code code code code code code code code code code code code code code code </Typography>
+                    //     </Grid>
+                    //     <Grid item>
+                    //         <Typography>cats lord of the rings travel sudoku cats lord of the rings travel sudoku </Typography>
+                    //     </Grid>
+                    // </Grid>
 //                 </Grid>
 //                 <Grid item xs={2} />
 //             </Grid> 
@@ -37,6 +37,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import tileData from '../tileData';
+import Typography from '@material-ui/core/Typography'
+import Grid from '@material-ui/core/Grid'
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -79,9 +82,23 @@ export default function ImageGridList() {
         {tileData.map((tile) => (
           <GridListTile key={tile.img} cols={tile.cols || 1} rows={tile.rows || 1}>
             <img src={require(`../assets/images/tiles/${tile.imgName}`)} alt={tile.title} />
-          </GridListTile>
+          </GridListTile>        
         ))}
       </GridList>
+      <Grid container direction="column" spacing={1}>
+                              <Grid item>
+                                  <Typography>music music music music music music music music music music music music music music music music music music music music music </Typography>
+                              </Grid>
+                              <Grid item>
+                                  <Typography>math teaching math teaching math teaching math teaching math teaching math teaching math teaching math teaching math teaching </Typography>
+                              </Grid>
+                              <Grid item>
+                                  <Typography>code code code code code code code code code code code code code code code code code code code code code code code code code code </Typography>
+                              </Grid>
+                              <Grid item>
+                                  <Typography>cats lord of the rings travel sudoku cats lord of the rings travel sudoku </Typography>
+                              </Grid>
+                          </Grid>
     </div>
   );
 }

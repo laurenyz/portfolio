@@ -14,17 +14,22 @@ import Container from '@material-ui/core/Container'
 import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    minHeight: 500,
-  },
+  main: {
+    minHeight: "100vh", /* will cover the 100% of viewport */
+    overflow: "hidden",
+    display: "block",
+    position: "relative",
+    paddingBottom: "100px"
+  }
+  
 }));
 
 function App(props){
   const classes = useStyles()
   return (
-    <div>
+    <div className={classes.main}>
       <Navbar />
-      <Container className={classes.root}>
+      <Container >
         <Switch>
             <Route exact path='/' component = {Homescreen} />  
             <Route exact path = '/projects/:id' render = {(props)=> {
