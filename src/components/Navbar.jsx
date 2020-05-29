@@ -50,7 +50,8 @@ const Navbar = (props) => {
     }
 
     function handleOnClickResume() {
-        window.open('https://drive.google.com/file/d/1kCROPzJHOUWOik_1X9pKm5d1gNGbXHl7/view?usp=sharing')
+        props.history.push('/resume')
+        // window.open('https://drive.google.com/file/d/1kCROPzJHOUWOik_1X9pKm5d1gNGbXHl7/view?usp=sharing')
     }
 
     function handleOnClickAbout() {

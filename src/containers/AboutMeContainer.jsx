@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
@@ -6,7 +6,6 @@ import Card from '@material-ui/core/Card'
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent'
 import Avatar from '@material-ui/core/Avatar';
-import CardActionArea from '@material-ui/core/CardActionArea'
 import Button from '@material-ui/core/Button'
 import tileData from '../tileData.json'
 
@@ -17,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     overflow: 'hidden',
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: "#eeeeee",
   },
   gridList: {
     width: 900,
@@ -31,51 +30,47 @@ const useStyles = makeStyles((theme) => ({
 
 function AboutMeContainer() {
   const classes = useStyles()
+  const [mainTile, setMainTile] = useState(tileData[0])
+
+  const handleClickTile = (tile) => {
+    setMainTile(tile)
+    console.log(tile)
+}
   return (
-    <div className={classes.root}>
-      <Grid container>
-        <Grid item xs={3}>
-          <Grid container justify="center" spacing={1} style={{paddingTop: "40px"}}>
-            <Grid item >
-            {tileData.map((tile) => (
-              <Grid item>
-                <Button>
-                  <Avatar variant="rounded" className={classes.avatar} src={require(`../assets/images/tiles/${tile.imgName}`)} alt={tile.title} />
-                </Button>        
-              </Grid>
-        ))}
-                  <Button>
-                  <Avatar variant="rounded" className={classes.avatar} src={require(`../assets/images/tiles/Bills.jpg`)} alt="Email" />
-                  </Button>
-            </Grid>
-            <Grid item >
-              <Card variant="outlined">
-                <CardActionArea>
-                  <Avatar variant="rounded" className={classes.avatar} src={require(`../assets/images/tiles/Bills.jpg`)} alt="Email" />
-                </CardActionArea>
-              </Card>  
-            </Grid>
-          </Grid>
-        </Grid>
-        <Grid item xs={6}>
-          <Card variant="outlined" style={{backgroundColor:"#eeeeee", maxWidth: "600px", minHeight: "450px", marginBottom: "20px"}}>
+    <div className={classes.root} >
+      <Grid container justify="center" alignItems="center" style={{paddingTop:"20px", paddingBottom:"20px"}}>
+      <Grid item xs={6}>
+          <Card variant="outlined" style={{backgroundColor:"#F8F8F8", maxWidth: "600px", minHeight: "450px"}}>
               <CardMedia
                     className = {classes.headerImage}
                     component="img"
-                    alt="Equation Background"
+                    alt={mainTile.title}
                     height="auto"
                     width = "240"
-                    image = {require(`../assets/images/headers/TheBreakingWindsHeader.jpg`)}
-                    title="Equation Background"
+                    image = {require(`../assets/images/headers/${mainTile.header}`)}
+                    title={mainTile.title}
                     />
                 <CardContent>
-                  <Typography>
-                    TheBreaki
+                  <Typography >
+                    {mainTile.blurb}
                   </Typography>
               </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={3} />
+        <Grid item xs={4}>
+          <Grid container justify="center">
+            
+            {tileData.map((t) => (
+              <Grid item>
+                <Button>
+                    <Avatar onClick={() => handleClickTile(t)} variant="square" className={classes.avatar} src={require(`../assets/images/tiles/${t.tile}`)} alt={t.title} />
+                </Button>        
+              </Grid>
+        ))}
+           
+          </Grid>
+        </Grid>
+       
       </Grid>
 
 

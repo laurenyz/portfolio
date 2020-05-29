@@ -12,6 +12,7 @@ import Footer from './components/Footer'
 import projectData from './projectData.json'
 import Container from '@material-ui/core/Container'
 import { makeStyles } from "@material-ui/core/styles"
+import Resume from './components/Resume'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -40,6 +41,7 @@ function App(props){
                   let project = projectData.projects.find(p => p.id === projectId)
                   return <ProjectShowPage project = {project}/> }} />
             <Route exact path='/projects' component = {ProjectsContainer} />  
+            <Route exact path='/resume' component = {Resume} />
             <Route exact path = '/about' component = {AboutMeContainer} /> 
             <Route exact path = '/contact' component = {ContactContainer} /> 
         </Switch>

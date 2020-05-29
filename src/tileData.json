@@ -1,50 +1,74 @@
 [
     {
-        "imgName": "Bills.jpg",
-        "title": "Bills" 
+        "header": "MainHeader.jpg",
+        "tile": "MainTile.jpg",
+        "title": "Bio",
+        "blurb": "Hi there! My name is Lauren, and I'm a full-stack developer as well as a bassoonist. \n I went to college with the intention of becoming a fulltime orchestral musician, and I continued to study math because I realy enjoyed it. Over time, I realized I didn't want to be purely a freelance musician..."
     },
     {
-        "imgName": "Tyrion.jpeg",
-        "title": "Tyrion" 
+        "header": "TravelHeader.jpg",
+        "tile": "TravelTile.jpg",
+        "title": "Travel",
+        "blurb": "I love to travel.  I have been very lucky that many of my performance opportunities have led me to go abroad.  Current passport stamps: Canada, China, England, Japan, St. Lucia, Jamaica, Dominican Republic, Spain, Italy, France, Mexico"
     },
     {
-        "imgName": "TheBreakingWinds.jpg",
-        "title": "The Breaking Winds"  
+        "header": "TheBreakingWindsHeader.jpg",
+        "tile": "TheBreakingWindsTile.jpg",
+        "title": "The Breaking Winds",
+        "blurb": "One of my favorite things to be a part of - my bassoon quartet, TheBreakingWinds"
+    },
+    {   
+        "header": "BillsHeader.jpg",
+        "tile": "BillsTile.jpg",
+        "title": "Bills",
+        "blurb": "I'm from Buffalo."
     },
     {
-        "imgName": "LordOfTheRings.jpg",
-        "title": "Hobbiton"  
+        "header": "TyrionHeader.jpg",
+        "tile": "TyrionTile.jpg",
+        "title": "Tyrion",
+        "blurb": "I have two wonderful cats named after some of our favorite Game of Thrones characters: Tyrion and Samwell aka T & Sam."
     },
     {
-        "imgName": "Travel.jpg",
-        "title": "Travel"
+        "header": "ChickenWingsHeader.jpg",
+        "tile": "ChickenWingsTile.jpg",
+        "title": "Chicken Wings",
+        "blurb": "Did I mention I'm from Buffalo? I LOVE chicken wings (sorry vegans)! Unlike in other areas where there may be one restaurant known for their wings, almost EVERY pizza joint in Buffalo has awesome wings.  If they don't - they'd go out of business.  Some of my favorites include: Anchor Bar, Mattina's, Duff's."
     },
     {
-        "imgName": "ChickenWings.jpg",
-        "title": "Chicken Wings" 
+        "header": "LordOfTheRingsHeader.jpg",
+        "tile": "LordOfTheRingsTile.jpg",
+        "title": "Hobbiton",
+        "blurb": "Lord of the Rings is the movie series that I would choose to watch over and over again.  Shockingly, I have only read the Hobbit, but I am currently working my way through the LOTR books right now."  
     },
     {
-        "imgName": "Wedding.jpg",
-        "title": "Chris & Lauren" 
+        "header": "WeddingHeader.jpg",
+        "tile": "WeddingTile.jpg",
+        "title": "Chris & Lauren" ,
+        "blurb": "I married my high school sweetheart! Chris is a jazz pianist, and we relocated to DC when he joined the Airmen of Note."
     },
     {
-        "imgName": "Skydiving.jpeg",
-        "title": "Skydiving" 
+        "header": "ChinatownHeader.jpg",
+        "tile": "ChinatownTile.jpg",
+        "title": "NYC Chinatown",
+        "blurb": "My family on my father's side is from Hong Kong. "
     },
     {
-        "imgName": "MachuPicchu.jpg",
-        "title": "Machu Picchu"  
+        "header": "MachuPicchuHeader.jpg",
+        "tile": "MachuPicchuTile.jpg",
+        "title": "Machu Picchu",
+        "blurb": "At the University of Rochester, there is a program called \"Take 5\" that enables students to take an extra year of free classes in any non-major area. I chose archaeology because I am fascinated by objects and buildings that have withstood the tests of time. I participated in a one-week dig in Vindolanda, England and have visited multiple archaeological sites including Machu Picchu, Kuelap, Sacsaywoman, Pisco, Ollyantaytambo, The Great Wall, Pompeii, Rome & Herculaneum.  Future goals include Athens & the Library in Jordan."  
     },
     {
-        "imgName": "Chinatown.jpg",
-        "title": "NYC Chinatown"  
+        "header": "SkydivingHeader.jpg",
+        "tile": "SkydivingTile.jpg",
+        "title": "Skydiving",
+        "blurb": "I wouldn't say I'm an adrenaline junkie, but I really enjoy trying new things and pushing my limits."
     },
     {
-        "imgName": "Apples.jpg",
-        "title": "Apples" 
-    },
-    {
-        "imgName": "Math.jpg",
-        "title": "Math" 
+        "header": "RockClimbingHeader.jpg",
+        "tile": "RockClimbingTile.jpg",
+        "title": "Rock Climbing",
+        "blurb": "I am not someone that enjoys exercise, so I have to trick myself by doing activities that I love that have the side benefit of being a form of exercise. During normal times, I enjoy going to a rock climbing gym with my husband. In addition to rock climbinb, I also really enjoy biking around DC and occassionally doing some yoga."
     }
 ]
