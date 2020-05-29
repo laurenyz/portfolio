@@ -40,7 +40,7 @@ function AboutMeContainer() {
     <div className={classes.root} >
       <Grid container justify="center" alignItems="center" style={{paddingTop:"20px", paddingBottom:"20px"}}>
       <Grid item xs={6}>
-          <Card variant="outlined" style={{backgroundColor:"#F8F8F8", maxWidth: "600px", minHeight: "450px"}}>
+          <Card variant="outlined" style={{backgroundColor:"#F8F8F8", maxWidth: "700px", minHeight: "450px"}}>
               <CardMedia
                     className = {classes.headerImage}
                     component="img"
@@ -51,15 +51,15 @@ function AboutMeContainer() {
                     title={mainTile.title}
                     />
                 <CardContent>
-                  <Typography >
-                    {mainTile.blurb}
-                  </Typography>
+                  {mainTile.blurb.split("\n").map(text => {
+                   return  <Typography style={{marginBottom:"10px"}}>{text}</Typography>
+                  })}
+                  
               </CardContent>
           </Card>
         </Grid>
         <Grid item xs={4}>
           <Grid container justify="center">
-            
             {tileData.map((t) => (
               <Grid item>
                 <Button>
