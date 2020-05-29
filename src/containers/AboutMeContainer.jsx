@@ -51,8 +51,8 @@ function AboutMeContainer() {
                     title={mainTile.title}
                     />
                 <CardContent>
-                  {mainTile.blurb.split("\n").map(text => {
-                   return  <Typography style={{marginBottom:"10px"}}>{text}</Typography>
+                  {mainTile.blurb.split("\n").map((text, i) => {
+                   return  <Typography key={i} style={{marginBottom:"10px"}}>{text}</Typography>
                   })}
                   
               </CardContent>
