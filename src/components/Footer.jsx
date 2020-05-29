@@ -28,7 +28,7 @@ const Footer = (props) => {
         <Grid container justify={"center"} spacing={2} style={{paddingTop: 10}}>
           <Grid item>
               <IconButton href="mailto:laurenkyu@gmail.com" className={classes.white}>
-              <MailOutlineIcon fontSize="small" />
+                <MailOutlineIcon fontSize="small" />
               </IconButton>
           </Grid>
           <Grid item >
