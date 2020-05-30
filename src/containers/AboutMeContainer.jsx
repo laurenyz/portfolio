@@ -18,13 +18,9 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
     backgroundColor: "#eeeeee",
   },
-  gridList: {
-    width: 900,
-    height: 500,
-  },
   avatar: {
-    width: 75,
-    height: 75,
+    width: 70,
+    height: 70,
 }
 }));
 
@@ -38,9 +34,9 @@ function AboutMeContainer() {
 }
   return (
     <div className={classes.root} >
-      <Grid container justify="center" alignItems="center" style={{paddingTop:"20px", paddingBottom:"20px"}}>
+      <Grid container justify="center" alignItems="flex-start" style={{marginTop:"20px", marginBottom:"20px"}}>
       <Grid item xs={6}>
-          <Card variant="outlined" style={{backgroundColor:"#F8F8F8", maxWidth: "700px", minHeight: "450px"}}>
+          <Card variant="outlined" style={{backgroundColor:"#F8F8F8", marginTop: "5px", maxWidth: "700px", minHeight: "485px"}}>
               <CardMedia
                     className = {classes.headerImage}
                     component="img"
@@ -51,14 +47,18 @@ function AboutMeContainer() {
                     title={mainTile.title}
                     />
                 <CardContent>
-                  {mainTile.blurb.split("\n").map((text, i) => {
-                   return  <Typography key={i} style={{marginBottom:"10px"}}>{text}</Typography>
-                  })}
-                  
+                  <Grid container spacing={1}>
+                    <Grid item>
+                      <Typography variant="h6" style={{fontWeight: "bold"}}>{mainTile.title.toUpperCase()}</Typography>
+                    </Grid>
+                    {mainTile.blurb.split("\n").map((text, i) => {
+                    return  <Grid item><Typography variant="body2" key={i} >{text}</Typography></Grid>
+                    })}
+                  </Grid>
               </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={2}>
           <Grid container justify="center">
             {tileData.map((t) => (
               <Grid item>
@@ -67,35 +67,9 @@ function AboutMeContainer() {
                 </Button>        
               </Grid>
         ))}
-           
           </Grid>
         </Grid>
-       
       </Grid>
-
-
-      
-      {/* <GridList cellHeight={160} className={classes.gridList} cols={6}>
-        {tileData.map((tile) => (
-          <GridListTile key={tile.img} cols={tile.cols || 1} rows={tile.rows || 1}>
-            <img src={require(`../assets/images/tiles/${tile.imgName}`)} alt={tile.title} />
-          </GridListTile>        
-        ))}
-      </GridList>
-      <Grid container direction="column" spacing={1}>
-                              <Grid item>
-                                  <Typography>music music music music music music music music music music music music music music music music music music music music music </Typography>
-                              </Grid>
-                              <Grid item>
-                                  <Typography>math teaching math teaching math teaching math teaching math teaching math teaching math teaching math teaching math teaching </Typography>
-                              </Grid>
-                              <Grid item>
-                                  <Typography>code code code code code code code code code code code code code code code code code code code code code code code code code code </Typography>
-                              </Grid>
-                              <Grid item>
-                                  <Typography>cats lord of the rings travel sudoku cats lord of the rings travel sudoku </Typography>
-                              </Grid>
-                          </Grid> */}
     </div>
   );
 }
