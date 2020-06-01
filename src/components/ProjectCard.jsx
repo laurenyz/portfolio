@@ -8,28 +8,28 @@ import Button from '@material-ui/core/Button'
 import Avatar from '@material-ui/core/Avatar'
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-      minWidth: 300,
-      position: 'relative',
+  //   root: {
+  //     minWidth: 300,
+  //     position: 'relative',
      
-    },
-    media: {
-        height: 0,
-        paddingTop: '56.25%', // 16:9
-      },
-    deleteBtn: {
-      marginLeft: 'auto'
-    },
-    overlay: {
-      position: 'absolute',
-      top: '20px',
-      left: '20px',
-      color: 'black',
-      backgroundColor: 'white'
-   },
+  //   },
+  //   media: {
+  //       height: 0,
+  //       paddingTop: '56.25%', // 16:9
+  //     },
+  //   deleteBtn: {
+  //     marginLeft: 'auto'
+  //   },
+  //   overlay: {
+  //     position: 'absolute',
+  //     top: '20px',
+  //     left: '20px',
+  //     color: 'black',
+  //     backgroundColor: 'white'
+  //  },
    avatar: {
-    width: 70,
-    height: 70,
+    width: 300,
+    height: 300,
 }
   }));
 
@@ -38,7 +38,7 @@ const ProjectCard = (props) => {
     const classes = useStyles();
     return(
                <Button>
-                    <Avatar onClick={() => handleOnClickProject(props.project.id)} variant="square" className={classes.avatar} src={require(`../assets/images/${props.project.name}.png`)} alt={props.project.name} />
+                    <Avatar onClick={() => handleOnClickProject(props.project.id)} variant="square" className={classes.avatar} src={require(`../assets/images/${props.project.name}.jpg`)} alt={props.project.name} />
                 </Button>
         // <Card className={classes.root} variant = "outlined" >
         //     <CardMedia

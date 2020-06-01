@@ -2,32 +2,28 @@ import React from 'react'
 import ProjectCard from '../components/ProjectCard'
 import projectData from '../projectData.json'
 import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
 import { uuid } from 'uuidv4';
+import { makeStyles } from '@material-ui/core/styles'
 
-class ProjectsContainer extends React.Component {
-
-    constructor(){
-        super()
-        this.state = {
-            searchTerm:""
-        }
+const useStyles = makeStyles((theme) => ({
+    root: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'space-around',
+      overflow: 'hidden',
+      backgroundColor: "#eeeeee",
     }
+  }));
 
-    // handleOnClick = (skill) => {
-    //     this.setState({searchTerm: skill})
-    // }
-
-    render(){
-        return(
-            <div>
-                <Grid container>
-                    {projectData.map(project => <Grid item key={uuid()}> <ProjectCard key={project.id} project={project} /></Grid>)}
-                </Grid>
-            </div>
-        )
-    }
-    
+const ProjectsContainer =(props) => {
+const classes = useStyles()
+return(
+    <div className={classes.root}>
+        <Grid container justify="center" spacing = {2} alignItems="flex-start" style={{maxWidth: "1000px", marginTop:"20px", marginBottom:"20px"}}>
+            {projectData.map(project => <Grid item key={uuid()}> <ProjectCard key={project.id} project={project} /></Grid>)}
+        </Grid>
+    </div>
+)    
 }
 
 export default ProjectsContainer

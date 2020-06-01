@@ -16,7 +16,7 @@
         },
         {
             "id": 2,
-            "name": "portfolio",
+            "name": "Portfolio",
             "demo_url": "https://youtu.be/86oJGqlPe60",
             "github": "https://github.com/laurenyz/portfolio",
             "languages": ["JavaScript"],

@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
+import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 
 const Navbar = (props) => {
 
@@ -28,7 +29,12 @@ const Navbar = (props) => {
                                         <Button onClick={handleOnClickAbout}>About</Button>
                                     </Grid>
                                     <Grid item>
-                                        <Button onClick={handleOnClickBlog}>Blog</Button>
+                                        <Button
+                                            endIcon={<OpenInNewIcon />}
+                                            onClick={handleOnClickBlog}
+                                        >
+                                            Blog
+                                        </Button>
                                     </Grid>
                                     <Grid item>
                                         <Button onClick={handleOnClickContact}>Contact</Button>
