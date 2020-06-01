@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-around',
     overflow: 'hidden',
     backgroundColor: "#eeeeee",
+    // backgroundColor: "#e4e8f4",
   },
   avatar: {
     width: 70,
@@ -30,7 +31,6 @@ function AboutMeContainer() {
 
   const handleClickTile = (tile) => {
     setMainTile(tile)
-    console.log(tile)
 }
   return (
     <div className={classes.root} >

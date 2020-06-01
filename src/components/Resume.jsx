@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     overflow: 'hidden',
+    // backgroundColor: "#e4e8f4",
     backgroundColor: "#eeeeee",
   },
   avatar: {
