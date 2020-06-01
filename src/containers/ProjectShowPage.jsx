@@ -1,13 +1,33 @@
 import React from 'react'
-import ReactPlayer from "react-player"
+
 
 const ProjectShowPage = ({project}) => {
 
     return(
         <div>
-            <ReactPlayer
-                url={project.demo_url}
-            />
+            <div
+      className="video"
+      style={{
+        position: "relative",
+        paddingBottom: "56.25%" /* 16:9 */,
+        paddingTop: 25,
+        height: 0
+      }}
+    >
+      <iframe
+      title="video"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "46.25%",
+          height: "50%"
+        }}
+        src={`https://www.youtube.com/embed/86oJGqlPe60`}
+        frameBorder="1"
+        allowFullScreen
+      />
+    </div>
             <h1>{project.name}</h1>
             <h4>{project.description}</h4>
             {project.github.frontend? 

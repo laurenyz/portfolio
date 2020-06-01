@@ -52,7 +52,7 @@ function AboutMeContainer() {
                       <Typography variant="h6" style={{fontWeight: "bold"}}>{mainTile.title.toUpperCase()}</Typography>
                     </Grid>
                     {mainTile.blurb.split("\n").map((text, i) => {
-                    return  <Grid item><Typography variant="body2" key={i} >{text}</Typography></Grid>
+                    return  <Grid item><Typography align="justify" variant="body2" key={i} >{text}</Typography></Grid>
                     })}
                   </Grid>
               </CardContent>

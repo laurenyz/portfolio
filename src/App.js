@@ -38,7 +38,7 @@ function App(props){
             <Route exact path='/' component = {Homescreen} />  
             <Route exact path = '/projects/:id' render = {(props)=> {
                   let projectId = parseInt(props.match.params.id)
-                  let project = projectData.projects.find(p => p.id === projectId)
+                  let project = projectData.find(p => p.id === projectId)
                   return <ProjectShowPage project = {project}/> }} />
             <Route exact path='/projects' component = {ProjectsContainer} />  
             <Route exact path='/resume' component = {Resume} />
