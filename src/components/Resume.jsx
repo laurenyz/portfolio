@@ -49,7 +49,7 @@ function Resume(props) {
                        <Typography variant="h4">SKILLS</Typography>
                     </Grid>
                     <Grid item>
-                        <Typography align="center" variant="body2">Javascript • Ruby • React • Redux • Ruby on Rails • Material-UI • HTML • CSS • Git • SQL • Postgres • Bootstrap</Typography>
+                        <Typography align="justify" variant="body2">Javascript • Ruby • React • Redux • Ruby on Rails • Material-UI • HTML • CSS • Git • SQL • Postgres • Bootstrap</Typography>
                     </Grid>
                     <Grid item>
                         <Divider style={{ margin: "5px auto", backgroundColor: "#666666"}} />
