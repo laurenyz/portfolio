@@ -16,14 +16,14 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 const ProjectsContainer =(props) => {
-const classes = useStyles()
-return(
-    <div className={classes.root}>
-        <Grid container justify="center" spacing = {2} alignItems="flex-start" style={{maxWidth: "1100px", marginTop:"20px", marginBottom:"20px"}}>
-            {projectData.map(project => <Grid item style={{marginLeft:"5px", marginRight:"10px"}} key={uuid()}> <ProjectCard key={project.id} project={project} /></Grid>)}
-        </Grid>
-    </div>
-)    
+    const classes = useStyles()
+    return(
+        <div className={classes.root}>
+            <Grid container justify="center" spacing = {2} alignItems="flex-start" style={{maxWidth: "1100px", marginTop:"20px", marginBottom:"20px"}}>
+                {projectData.map(project => <Grid item style={{marginLeft:"5px", marginRight:"10px"}} key={uuid()}> <ProjectCard key={project.id} project={project} /></Grid>)}
+            </Grid>
+        </div>
+    )    
 }
 
 export default ProjectsContainer

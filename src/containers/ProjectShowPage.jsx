@@ -28,68 +28,57 @@ const ProjectShowPage = ({project}) => {
   const classes = useStyles()
     return(
         <div className={classes.root}>
-            <Grid container justify="flex-start" direction="column" spacing = {3} alignItems="space-around" style={{ marginTop:"25px", marginBottom:"20px"}}>
-              <Grid container spacing={2} justify="center" alignItems="flex-start"> 
+            <Grid container spacing={2} justify="center" alignItems="flex-start" style={{ marginTop:"25px", marginBottom:"20px"}}> 
                 <Grid item xs= {4} style={{width: "50%", height: "auto", minWidth: 450, maxWidth: 500}}>
-                  <Avatar 
-                    className={classes.avatar} 
-                    variant="square" 
-                    src={require(`../assets/images/projects/${project.name}.jpg`)} 
-                    alt={project.display_name} />
+                    <Avatar 
+                      className={classes.avatar} 
+                      variant="square" 
+                      src={require(`../assets/images/projects/${project.name}.jpg`)} 
+                      alt={project.display_name} />
                 </Grid> 
                 <Grid item xs={5}> 
-                  
-                  {project.github.frontend?
+                    {project.github.frontend?
                     <div style={{float:"right", marginRight:"20px"}}> 
-                      <IconButton onClick={handleOnClickFrontend} size="small">
-                        <GitHubIcon fontSize="small"/> 
-                      </IconButton>
-                      <Link href="#" onClick={handleOnClickFrontendLink}>Frontend</Link> {" | "} 
-                      <IconButton onClick={handleOnClickBackend} size="small">
-                        <GitHubIcon fontSize="small"/> 
-                      </IconButton>
-                      <Link href="#" onClick={handleOnClickBackendLink}>Backend</Link>
-                      {project.demo_url? 
-                      <span>
-                        {" | "}
-                      <IconButton onClick={handleOnClickDemo} size="small">
-                        <YouTubeIcon fontSize="small"/> 
-                      </IconButton>
-                      <Link href="#" onClick={handleOnClickDemoLink}>Demo</Link>
-                        </span> : null
-                      }
+                        <IconButton onClick={handleOnClickFrontend} size="small">
+                            <GitHubIcon fontSize="small"/> 
+                        </IconButton>
+                        <Link href="#" onClick={handleOnClickFrontendLink}>Frontend</Link> {" | "} 
+                        <IconButton onClick={handleOnClickBackend} size="small">
+                            <GitHubIcon fontSize="small"/> 
+                        </IconButton>
+                        <Link href="#" onClick={handleOnClickBackendLink}>Backend</Link>
+                        {project.demo_url? 
+                        <span>
+                          {" | "}
+                            <IconButton onClick={handleOnClickDemo} size="small">
+                              <YouTubeIcon fontSize="small"/> 
+                            </IconButton>
+                            <Link href="#" onClick={handleOnClickDemoLink}>Demo</Link>
+                        </span> : null}
                     </div>:
                     <div style={{float:"right", marginRight:"20px"}}>
-                      <IconButton onClick={handleOnClickGithub} size="small">
-                        <GitHubIcon fontSize="small"/> 
-                      </IconButton>
-                      <Link href="#" onClick={handleOnClickGithubLink}>Github</Link>
-                      {project.demo_url? 
-                      <span>
+                        <IconButton onClick={handleOnClickGithub} size="small">
+                            <GitHubIcon fontSize="small"/> 
+                        </IconButton>
+                        <Link href="#" onClick={handleOnClickGithubLink}>Github</Link>
+                        {project.demo_url? 
+                        <span>
                         {" | "}
-                      <IconButton onClick={handleOnClickDemo} size="small">
-                        <YouTubeIcon fontSize="small"/> 
-                      </IconButton>
-                      <Link href="#" onClick={handleOnClickDemoLink}>Demo</Link>
-                        </span> : null
-                      }
+                        <IconButton onClick={handleOnClickDemo} size="small">
+                            <YouTubeIcon fontSize="small"/> 
+                        </IconButton>
+                        <Link href="#" onClick={handleOnClickDemoLink}>Demo</Link>
+                        </span> : null}
                     </div>}
                     <Typography variant="h3" style={{fontFamily: "Montserrat, sans-serif", marginTop: "30px"}}>{project.name}</Typography>
                     <Typography align="justify" variant="body2">{project.description}</Typography>
                     <Divider style={{marginTop:"10px", marginBottom: "10px"}} variant="middle"/>
                     <Typography variant="subtitle1">Language(s): {project.languages.join(",")}</Typography>
-                  <Typography variant="subtitle1">Libraries: {project.libraries.join(", ")}</Typography>
-                  {project.frontend? <Typography variant="subtitle1">Frontend: {project.frontend}</Typography> : null}
-                  {project.backend? <Typography variant="subtitle1">Backend: {project.backend}</Typography> : null}
-                  
+                    <Typography variant="subtitle1">Libraries: {project.libraries.join(", ")}</Typography>
+                    {project.frontend? <Typography variant="subtitle1">Frontend: {project.frontend}</Typography> : null}
+                    {project.backend? <Typography variant="subtitle1">Backend: {project.backend}</Typography> : null}
                 </Grid>
-               </Grid>            
-              <Grid item>
-                
-              </Grid>
-            </Grid>
-           
-           
+            </Grid>            
         </div>
     )
 
@@ -131,16 +120,6 @@ const ProjectShowPage = ({project}) => {
 }
 
 export default ProjectShowPage
-
-// "github": {
-//     "frontend": "https://github.com/laurenyz/mathLab-frontend",
-//     "backend": "https://github.com/laurenyz/mathLab-backend"
-// },
-// "languages": ["Ruby, Javascript"],
-// "backend": "Ruby on Rails",
-// "frontend": "React",
-// "libraries": ["Redux", "Thunk", "Action Cable", "Active Storage", "Material-Ui", "React-to-Print", "bcrypt", "JWT token"],
-// "description":
 
 // {/* <div
 //       className="video"

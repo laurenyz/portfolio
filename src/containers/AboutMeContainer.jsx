@@ -17,7 +17,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-around',
     overflow: 'hidden',
     backgroundColor: "#eeeeee",
-    // backgroundColor: "#e4e8f4",
   },
   avatar: {
     width: 70,

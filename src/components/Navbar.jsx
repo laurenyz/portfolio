@@ -12,37 +12,37 @@ const Navbar = (props) => {
     return(
         <div>
             <AppBar position="static" style={{background: 'transparent', boxShadow: 'none', marginBottom:"20px"}}> 
-                    <Toolbar>
-                        <Grid container justify="space-between" alignItems="center">
-                            <Grid item>
-                                <Typography onClick={handleOnClickHomepage} style={{cursor: "pointer", color:"#666666", fontFamily: "Montserrat, sans-serif", paddingTop:"20px"}} variant = "h3">LAUREN YU</Typography>
-                            </Grid>
-                            <Grid item>
-                                <Grid container>
-                                    <Grid item>
-                                        <Button onClick={handleOnClickProjects}>Projects</Button>
-                                    </Grid>
-                                    <Grid item>
-                                        <Button onClick={handleOnClickResume}>Resume</Button>
-                                    </Grid>
-                                    <Grid item>
-                                        <Button onClick={handleOnClickAbout}>About</Button>
-                                    </Grid>
-                                    <Grid item>
-                                        <Button
-                                            endIcon={<OpenInNewIcon />}
-                                            onClick={handleOnClickBlog}
-                                        >
-                                            Blog
-                                        </Button>
-                                    </Grid>
-                                    <Grid item>
-                                        <Button onClick={handleOnClickContact}>Contact</Button>
-                                    </Grid>
+                <Toolbar>
+                    <Grid container justify="space-between" alignItems="center">
+                        <Grid item>
+                            <Typography onClick={handleOnClickHomepage} style={{cursor: "pointer", color:"#666666", fontFamily: "Montserrat, sans-serif", paddingTop:"20px"}} variant = "h3">LAUREN YU</Typography>
+                        </Grid>
+                        <Grid item>
+                            <Grid container>
+                                <Grid item>
+                                    <Button onClick={handleOnClickProjects}>Projects</Button>
+                                </Grid>
+                                <Grid item>
+                                    <Button onClick={handleOnClickResume}>Resume</Button>
+                                </Grid>
+                                <Grid item>
+                                    <Button onClick={handleOnClickAbout}>About</Button>
+                                </Grid>
+                                <Grid item>
+                                    <Button
+                                        endIcon={<OpenInNewIcon />}
+                                        onClick={handleOnClickBlog}
+                                    >
+                                        Blog
+                                    </Button>
+                                </Grid>
+                                <Grid item>
+                                    <Button onClick={handleOnClickContact}>Contact</Button>
                                 </Grid>
                             </Grid>
                         </Grid>
-                    </Toolbar>
+                    </Grid>
+                </Toolbar>
             </AppBar>
         </div>
     )
@@ -71,7 +71,5 @@ const Navbar = (props) => {
         props.history.push('/contact')
     }
 }
-
-
 
 export default withRouter(Navbar)

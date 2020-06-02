@@ -9,14 +9,12 @@ import OpenInBrowserIcon from '@material-ui/icons/OpenInBrowser';
 import Divider from '@material-ui/core/Divider'
 import Link from '@material-ui/core/Link'
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     overflow: 'hidden',
-    // backgroundColor: "#e4e8f4",
     backgroundColor: "#eeeeee",
   },
   avatar: {
