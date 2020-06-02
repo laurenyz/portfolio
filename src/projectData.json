@@ -19,13 +19,12 @@
             "id": 2,
             "name": "Portfolio",
             "display_name": "Portfolio",
-            "demo_url": "https://youtu.be/86oJGqlPe60",
             "github": "https://github.com/laurenyz/portfolio",
             "languages": ["JavaScript"],
             "backend": "",
             "frontend": "React",
             "libraries": ["Material-UI"],
-            "description": "My portfolio"
+            "description": "As the name might suggest, this website's purpose is to showcase my portfolio of projects while showing a bit of my personality along the way. I wanted to create a very cohesive, clean website, so I chose to dig in a bit more to Material-UI."
         },
         {
             "id": 3,
@@ -46,7 +45,6 @@
             "id": 4,
             "name": "BounceAround",
             "display_name": "Bounce Around",
-            "demo_url": "https://youtu.be/86oJGqlPe60",
             "github": {
                 "frontend": "https://github.com/matteoaricci/bouncearound/tree/master/bounce-frontend",
                 "backend": "https://github.com/matteoaricci/bouncearound/tree/master/bounce-backend"
@@ -61,7 +59,7 @@
             "id": 5,
             "name": "Fetch",
             "display_name": "Fetch",
-            "demo_url": "https://youtu.be/86oJGqlPe60",
+            "demo_url": "https://youtu.be/K99HVhMe1Vg",
             "github": "https://github.com/laurenyz/fetch",
             "languages": ["Ruby"],
             "backend": "Ruby on Rails",
@@ -74,7 +72,6 @@
             "id": 6,
             "name": "Zombo",
             "display_name": "Zombo",
-            "demo_url": "https://youtu.be/86oJGqlPe60",
             "github": "https://github.com/IdleScV/ZOMBO",
             "languages": ["Ruby"],
             "backend": "",

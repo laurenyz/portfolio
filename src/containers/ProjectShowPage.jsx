@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     width: "100%",
     height: "100%",
-    cursor: "pointer"
 }
 }));
 
@@ -75,7 +74,7 @@ const ProjectShowPage = ({project}) => {
                         </span> : null
                       }
                     </div>}
-                    <Typography variant="h3" style={{fontFamily: "Montserrat, sans-serif", marginTop: "40px"}}>{project.name}</Typography>
+                    <Typography variant="h3" style={{fontFamily: "Montserrat, sans-serif", marginTop: "30px"}}>{project.name}</Typography>
                     <Typography align="justify" variant="body2">{project.description}</Typography>
                     <Divider style={{marginTop:"10px", marginBottom: "10px"}} variant="middle"/>
                     <Typography variant="subtitle1">Language(s): {project.languages.join(",")}</Typography>
@@ -95,7 +94,7 @@ const ProjectShowPage = ({project}) => {
     )
 
     function handleOnClickDemoLink(event){
-      event.preventDefaul()
+      event.preventDefault()
       window.open(project.demo_url)
     }
 
