@@ -30,19 +30,17 @@ function Resume(props) {
 
   return (
     <div className={classes.root} >
-          <Card variant="outlined" style={{backgroundColor:"#F8F8F8", margin: "auto", marginTop: "25px", marginBottom: "25px", width:"80%", minWidth: "400px", maxWidth: "800px"}}>
-               
-                <Button
-        variant="contained"
-        color="primary"
-        className={classes.button}
-        startIcon={<OpenInBrowserIcon />}
-        onClick={handleOnClickPDF}
-        style={{float: "right", margin: "5px"}}
-      >
-        PDF
-      </Button>
-                
+          <Card variant="outlined" style={{backgroundColor:"#F8F8F8", margin: "auto", marginTop: "25px", marginBottom: "25px", width:"80%", minWidth: "400px", maxWidth: "800px"}}>   
+            <Button
+              variant="contained"
+              color="primary"
+              className={classes.button}
+              startIcon={<OpenInBrowserIcon />}
+              onClick={handleOnClickPDF}
+              style={{float: "right", margin: "10px"}}
+            >
+              PDF
+            </Button>     
                 <CardContent>
                   <Grid container direction="column" spacing={1}>
                     <Grid item>
