@@ -40,12 +40,6 @@ const useStyles = makeStyles((theme) => ({
       zIndex: "2",
       cursor: "pointer"
    },
-  //  hover:{
-  //   opacity: ".75",
-  //   width: 300,
-  //   height: 300,
-  //   cursor: "pointer"
-  //  },
     avatar: {
     width: "100%",
     height: "100%",

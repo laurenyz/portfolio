@@ -80,7 +80,7 @@
             "backend": "",
             "frontend": "",
             "libraries": ["Faker"],
-            "description": "Zombo is not your average Zombie CLI game.  It features five mini-games that, when won, kill a zombie.  Mini-games ('weapons'), include: Sword (guess the number), knife (speed entry), candlestick (trivia), rope (hangman) and gun (speed typing)."
+            "description": "Zombo is not your average Zombie CLI game.  It features five mini-games that, when won, kill a zombie.  Mini-games ('weapons'), include: Sword (guess the number), knife (speed entry), candlestick (trivia), rope (hangman) and gun (speed typing). Your task is to kill 10 zombies before you run out of humans.  Good luck!"
             
         }
     ]

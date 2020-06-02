@@ -1,56 +1,131 @@
 import React from 'react'
+import Grid from '@material-ui/core/Grid'
+import { makeStyles } from '@material-ui/core/styles'
+import Typography from '@material-ui/core/Typography'
+import Avatar from '@material-ui/core/Avatar'
+import IconButton from '@material-ui/core/IconButton'
+import GitHubIcon from '@material-ui/icons/GitHub';
+import Link from '@material-ui/core/Link'
+import Divider from '@material-ui/core/Divider'
+import YouTubeIcon from '@material-ui/icons/YouTube';
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    backgroundColor: "#eeeeee",
+    minHeight: 600
+  },
+  avatar: {
+    width: "100%",
+    height: "100%",
+    cursor: "pointer"
+}
+}));
 
 const ProjectShowPage = ({project}) => {
-
+  const classes = useStyles()
     return(
-        <div>
-            <div
-      className="video"
-      style={{
-        position: "relative",
-        paddingBottom: "56.25%" /* 16:9 */,
-        paddingTop: 25,
-        height: 0
-      }}
-    >
-      <iframe
-      title="video"
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "46.25%",
-          height: "50%"
-        }}
-        src={`https://www.youtube.com/embed/86oJGqlPe60`}
-        frameBorder="1"
-        allowFullScreen
-      />
-    </div>
-            <h1>{project.name}</h1>
-            <h4>{project.description}</h4>
-            {project.github.frontend? 
-            <div>
-                <h2 onClick = {handleOnClickFrontend}>Github Frontend</h2> | <h2 onClick = {handleOnClickBackend}>Github Backend</h2>
-            </div>:
-            <h2 onClick = {handleOnClickGithub}>Github</h2>}
-            <h3>Languages: {project.languages.join(",")}</h3>
-            <h3>Libraries: {project.libraries.join(", ")}</h3>
-            <h3>Frontend: {project.frontend}</h3>
-            <h3>Backend: {project.backend}</h3>
+        <div className={classes.root}>
+            <Grid container justify="flex-start" direction="column" spacing = {3} alignItems="space-around" style={{ marginTop:"25px", marginBottom:"20px"}}>
+              <Grid container spacing={2} justify="center" alignItems="flex-start"> 
+                <Grid item xs= {4} style={{width: "50%", height: "auto", minWidth: 450, maxWidth: 500}}>
+                  <Avatar 
+                    className={classes.avatar} 
+                    variant="square" 
+                    src={require(`../assets/images/projects/${project.name}.jpg`)} 
+                    alt={project.display_name} />
+                </Grid> 
+                <Grid item xs={5}> 
+                  
+                  {project.github.frontend?
+                    <div style={{float:"right", marginRight:"20px"}}> 
+                      <IconButton onClick={handleOnClickFrontend} size="small">
+                        <GitHubIcon fontSize="small"/> 
+                      </IconButton>
+                      <Link href="#" onClick={handleOnClickFrontendLink}>Frontend</Link> {" | "} 
+                      <IconButton onClick={handleOnClickBackend} size="small">
+                        <GitHubIcon fontSize="small"/> 
+                      </IconButton>
+                      <Link href="#" onClick={handleOnClickBackendLink}>Backend</Link>
+                      {project.demo_url? 
+                      <span>
+                        {" | "}
+                      <IconButton onClick={handleOnClickDemo} size="small">
+                        <YouTubeIcon fontSize="small"/> 
+                      </IconButton>
+                      <Link href="#" onClick={handleOnClickDemoLink}>Demo</Link>
+                        </span> : null
+                      }
+                    </div>:
+                    <div style={{float:"right", marginRight:"20px"}}>
+                      <IconButton onClick={handleOnClickGithub} size="small">
+                        <GitHubIcon fontSize="small"/> 
+                      </IconButton>
+                      <Link href="#" onClick={handleOnClickGithubLink}>Github</Link>
+                      {project.demo_url? 
+                      <span>
+                        {" | "}
+                      <IconButton onClick={handleOnClickDemo} size="small">
+                        <YouTubeIcon fontSize="small"/> 
+                      </IconButton>
+                      <Link href="#" onClick={handleOnClickDemoLink}>Demo</Link>
+                        </span> : null
+                      }
+                    </div>}
+                    <Typography variant="h3" style={{fontFamily: "Montserrat, sans-serif", marginTop: "40px"}}>{project.name}</Typography>
+                    <Typography align="justify" variant="body2">{project.description}</Typography>
+                    <Divider style={{marginTop:"10px", marginBottom: "10px"}} variant="middle"/>
+                    <Typography variant="subtitle1">Language(s): {project.languages.join(",")}</Typography>
+                  <Typography variant="subtitle1">Libraries: {project.libraries.join(", ")}</Typography>
+                  {project.frontend? <Typography variant="subtitle1">Frontend: {project.frontend}</Typography> : null}
+                  {project.backend? <Typography variant="subtitle1">Backend: {project.backend}</Typography> : null}
+                  
+                </Grid>
+               </Grid>            
+              <Grid item>
+                
+              </Grid>
+            </Grid>
+           
            
         </div>
     )
+
+    function handleOnClickDemoLink(event){
+      event.preventDefaul()
+      window.open(project.demo_url)
+    }
+
+    function handleOnClickDemo(){
+      window.open(project.demo_url)
+    }
+
+    function handleOnClickFrontendLink(event){
+      event.preventDefault()
+      window.open(`${project.github.frontend}`)
+  }
 
     function handleOnClickFrontend(){
         window.open(`${project.github.frontend}`)
     }
 
+    function handleOnClickBackendLink(event){
+      event.preventDefault()
+      window.open(`${project.github.backend}`)
+  }
+
     function handleOnClickBackend(){
         window.open(`${project.github.backend}`)
     }
     
+    function handleOnClickGithubLink(event){
+      event.preventDefault()
+      window.open(`${project.github}`)
+  }
+
     function handleOnClickGithub(){
         window.open(`${project.github}`)
     }
@@ -67,3 +142,27 @@ export default ProjectShowPage
 // "frontend": "React",
 // "libraries": ["Redux", "Thunk", "Action Cable", "Active Storage", "Material-Ui", "React-to-Print", "bcrypt", "JWT token"],
 // "description":
+
+// {/* <div
+//       className="video"
+//       style={{
+//         position: "relative",
+//         paddingBottom: "56.25%" /* 16:9 */,
+//         paddingTop: 25,
+//         height: 0
+//       }}
+//     >
+//       <iframe
+//       title="video"
+//         style={{
+//           position: "absolute",
+//           top: 0,
+//           left: 0,
+//           width: "46.25%",
+//           height: "50%"
+//         }}
+//         src={`https://www.youtube.com/embed/86oJGqlPe60`}
+//         frameBorder="1"
+//         allowFullScreen
+//       />
+//   </div> */}
