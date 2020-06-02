@@ -2,6 +2,7 @@
         {
             "id": 1,
             "name": "mathLab",
+            "display_name": "mathLab",
             "demo_url": "https://youtu.be/86oJGqlPe60",
             "github": {
                 "frontend": "https://github.com/laurenyz/mathLab-frontend",
@@ -17,6 +18,7 @@
         {
             "id": 2,
             "name": "Portfolio",
+            "display_name": "Portfolio",
             "demo_url": "https://youtu.be/86oJGqlPe60",
             "github": "https://github.com/laurenyz/portfolio",
             "languages": ["JavaScript"],
@@ -28,6 +30,7 @@
         {
             "id": 3,
             "name": "Stargazers",
+            "display_name": "Stargazers",
             "demo_url": "https://youtu.be/hsCBoPEgrEU",
             "github": {
                 "frontend": "https://github.com/matteoaricci/stargazers-frontend",
@@ -42,6 +45,7 @@
         {
             "id": 4,
             "name": "BounceAround",
+            "display_name": "Bounce Around",
             "demo_url": "https://youtu.be/86oJGqlPe60",
             "github": {
                 "frontend": "https://github.com/matteoaricci/bouncearound/tree/master/bounce-frontend",
@@ -56,6 +60,7 @@
         {
             "id": 5,
             "name": "Fetch",
+            "display_name": "Fetch",
             "demo_url": "https://youtu.be/86oJGqlPe60",
             "github": "https://github.com/laurenyz/fetch",
             "languages": ["Ruby"],
@@ -68,6 +73,7 @@
         {
             "id": 6,
             "name": "Zombo",
+            "display_name": "Zombo",
             "demo_url": "https://youtu.be/86oJGqlPe60",
             "github": "https://github.com/IdleScV/ZOMBO",
             "languages": ["Ruby"],
