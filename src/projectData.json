@@ -45,6 +45,7 @@
             "id": 4,
             "name": "BounceAround",
             "display_name": "Bounce Around",
+            "demo_url": "https://youtu.be/_mTqij0gKT4",
             "github": {
                 "frontend": "https://github.com/matteoaricci/bouncearound/tree/master/bounce-frontend",
                 "backend": "https://github.com/matteoaricci/bouncearound/tree/master/bounce-backend"
