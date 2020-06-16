@@ -154,7 +154,7 @@ function Resume(props) {
   }
 
   function handleOnClickPDF() {
-    window.open('https://drive.google.com/file/d/1Ei_V_XeXldHxKBvq9P-sC8xZBUBwnIcY/view?usp=sharing')
+    window.open('https://drive.google.com/file/d/1njBwh2kBq6ySeaGW2pIQx-4NkdUf4R1k/view?usp=sharing')
   }
 }
 export default Resume
