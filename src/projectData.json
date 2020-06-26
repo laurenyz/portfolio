@@ -3,6 +3,7 @@
             "id": 1,
             "name": "mathLab",
             "display_name": "mathLab",
+            "live_site": "https://laurenyzmathlab.netlify.app/",
             "demo_url": "https://youtu.be/86oJGqlPe60",
             "github": {
                 "frontend": "https://github.com/laurenyz/mathLab-frontend",

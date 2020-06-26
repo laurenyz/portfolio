@@ -8,6 +8,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import Link from '@material-ui/core/Link'
 import Divider from '@material-ui/core/Divider'
 import YouTubeIcon from '@material-ui/icons/YouTube';
+import LanguageIcon from '@material-ui/icons/Language';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,40 +38,62 @@ const ProjectShowPage = ({project}) => {
                       alt={project.display_name} />
                 </Grid> 
                 <Grid item xs={5}> 
-                    {project.github.frontend?
                     <div style={{float:"right", marginRight:"20px"}}> 
-                        <IconButton onClick={handleOnClickFrontend} size="small">
-                            <GitHubIcon fontSize="small"/> 
-                        </IconButton>
-                        <Link href="#" onClick={handleOnClickFrontendLink}>Frontend</Link> {" | "} 
-                        <IconButton onClick={handleOnClickBackend} size="small">
-                            <GitHubIcon fontSize="small"/> 
-                        </IconButton>
-                        <Link href="#" onClick={handleOnClickBackendLink}>Backend</Link>
-                        {project.demo_url? 
-                        <span>
+                      {project.github.frontend?
+                      <div > 
+                          <IconButton onClick={handleOnClickFrontend} size="small">
+                              <GitHubIcon fontSize="small"/> 
+                          </IconButton>
+                          <Link href="#" onClick={handleOnClickFrontendLink}>Frontend</Link> {" | "} 
+                          <IconButton onClick={handleOnClickBackend} size="small">
+                              <GitHubIcon fontSize="small"/> 
+                          </IconButton>
+                          <Link href="#" onClick={handleOnClickBackendLink}>Backend</Link>
+                          {project.demo_url? 
+                          <span>
+                            {" | "}
+                              <IconButton onClick={handleOnClickDemo} size="small">
+                                <YouTubeIcon fontSize="small"/> 
+                              </IconButton>
+                              <Link href="#" onClick={handleOnClickDemoLink}>Demo</Link>
+                          </span> : null}
+                          {project.live_site? 
+                          <span>
+                            {" | "}
+                              <IconButton onClick={handleOnClickLiveSite} size="small">
+                                  <LanguageIcon fontSize="small"/> 
+                              </IconButton>
+                              <Link href="#" onClick={handleOnClickLiveSiteLink}>Live Site</Link>
+                          </span>: null} 
+                      </div>:
+                      <div >
+                          <IconButton onClick={handleOnClickGithub} size="small">
+                              <GitHubIcon fontSize="small"/> 
+                          </IconButton>
+                          <Link href="#" onClick={handleOnClickGithubLink}>Github</Link>
+                          {project.demo_url? 
+                          <span>
                           {" | "}
-                            <IconButton onClick={handleOnClickDemo} size="small">
+                          <IconButton onClick={handleOnClickDemo} size="small">
                               <YouTubeIcon fontSize="small"/> 
-                            </IconButton>
-                            <Link href="#" onClick={handleOnClickDemoLink}>Demo</Link>
-                        </span> : null}
-                    </div>:
-                    <div style={{float:"right", marginRight:"20px"}}>
-                        <IconButton onClick={handleOnClickGithub} size="small">
-                            <GitHubIcon fontSize="small"/> 
-                        </IconButton>
-                        <Link href="#" onClick={handleOnClickGithubLink}>Github</Link>
-                        {project.demo_url? 
-                        <span>
-                        {" | "}
-                        <IconButton onClick={handleOnClickDemo} size="small">
-                            <YouTubeIcon fontSize="small"/> 
-                        </IconButton>
-                        <Link href="#" onClick={handleOnClickDemoLink}>Demo</Link>
-                        </span> : null}
-                    </div>}
-                    <Typography variant="h3" style={{fontFamily: "Montserrat, sans-serif", marginTop: "30px"}}>{project.name}</Typography>
+                          </IconButton>
+                          <Link href="#" onClick={handleOnClickDemoLink}>Demo</Link>
+                          </span> : null}
+                          {project.live_site? 
+                          <span>
+                            {" | "}
+                              <IconButton onClick={handleOnClickLiveSite} size="small">
+                                  <LanguageIcon fontSize="small"/> 
+                              </IconButton>
+                              <Link href="#" onClick={handleOnClickLiveSiteLink}>Live Site</Link>
+                          </span>: null} 
+                      </div>}
+                    </div>
+                    {project.live_site? 
+                      <Typography onClick = {handleOnClickLiveSite} variant="h3" style={{fontFamily: "Montserrat, sans-serif", marginTop: "30px", cursor:"pointer"}}>{project.name}</Typography>
+                      :
+                      <Typography variant="h3" style={{fontFamily: "Montserrat, sans-serif", marginTop: "30px"}}>{project.name}</Typography>
+                    }
                     <Typography align="justify" variant="body2">{project.description}</Typography>
                     <Divider style={{marginTop:"10px", marginBottom: "10px"}} variant="middle"/>
                     <Typography variant="subtitle1">Language(s): {project.languages.join(",")}</Typography>
@@ -81,6 +104,15 @@ const ProjectShowPage = ({project}) => {
             </Grid>            
         </div>
     )
+
+    function handleOnClickLiveSiteLink(event){
+      event.preventDefault()
+      window.open(project.live_site)
+    }
+    
+    function handleOnClickLiveSite(){
+      window.open(project.live_site)
+    }
 
     function handleOnClickDemoLink(event){
       event.preventDefault()
