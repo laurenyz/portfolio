@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.5f361e03.chunk.css",
-    "main.js": "/portfolio/static/js/main.219fcc65.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.219fcc65.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.d077df7f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.d077df7f.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.f4f2abbf.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.f4f2abbf.js.map",
-    "static/js/2.e874b740.chunk.js": "/portfolio/static/js/2.e874b740.chunk.js",
-    "static/js/2.e874b740.chunk.js.map": "/portfolio/static/js/2.e874b740.chunk.js.map",
+    "static/js/2.802267e5.chunk.js": "/portfolio/static/js/2.802267e5.chunk.js",
+    "static/js/2.802267e5.chunk.js.map": "/portfolio/static/js/2.802267e5.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.e394ed9bb194144929e92af1d9cf5e83.js": "/portfolio/precache-manifest.e394ed9bb194144929e92af1d9cf5e83.js",
+    "precache-manifest.08d473ba740c2b091a2c71c573e89475.js": "/portfolio/precache-manifest.08d473ba740c2b091a2c71c573e89475.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/portfolio/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.e874b740.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e874b740.chunk.js.LICENSE.txt",
+    "static/js/2.802267e5.chunk.js.LICENSE.txt": "/portfolio/static/js/2.802267e5.chunk.js.LICENSE.txt",
     "static/media/BillsHeader.jpg": "/portfolio/static/media/BillsHeader.b3e4e9b3.jpg",
     "static/media/BillsTile.jpg": "/portfolio/static/media/BillsTile.898eee50.jpg",
     "static/media/BounceAround.jpg": "/portfolio/static/media/BounceAround.28f7c0d3.jpg",
@@ -19,6 +19,7 @@
     "static/media/ChickenWingsTile.jpg": "/portfolio/static/media/ChickenWingsTile.7c5306bc.jpg",
     "static/media/ChinatownHeader.jpg": "/portfolio/static/media/ChinatownHeader.2860501a.jpg",
     "static/media/ChinatownTile.jpg": "/portfolio/static/media/ChinatownTile.bbe37fd4.jpg",
+    "static/media/CovidTracer.jpg": "/portfolio/static/media/CovidTracer.d2cd20e5.jpg",
     "static/media/Fetch.jpg": "/portfolio/static/media/Fetch.4adfdaf2.jpg",
     "static/media/LordOfTheRingsHeader.jpg": "/portfolio/static/media/LordOfTheRingsHeader.dba417b7.jpg",
     "static/media/LordOfTheRingsTile.jpg": "/portfolio/static/media/LordOfTheRingsTile.c6bd020e.jpg",
@@ -52,8 +53,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f4f2abbf.js",
-    "static/js/2.e874b740.chunk.js",
+    "static/js/2.802267e5.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.219fcc65.chunk.js"
+    "static/js/main.d077df7f.chunk.js"
   ]
 }
