@@ -18,6 +18,19 @@
         },
         {
             "id": 2,
+            "name": "CovidTracer",
+            "display_name": "Covid Tracer",
+            "live_site": "https://covid-tracer.netlify.app/",
+            "demo_url": "https://youtu.be/0TzISZQBsUQ",
+            "github": "https://github.com/laurenyz/06-27-DataDayGrind",
+            "languages": ["JavaScript"],
+            "frontend": "React",
+            "libraries": ["Victory", "Regression", "Material-UI"],
+            "description": "This application takes active data from the Covid Tracking Project API, and breaks it down by location and date. It then graphs that data so that the behavior of the virus can be seen over time more easily, and a linear or exponential regression equation (determined by correlation coefficient) allow for future predictions up to 31 days from the current date. For the state graphs, additional information is provided for some helpful links about the selected state's policies towards masks and other Covid related laws."
+            
+        },
+        {
+            "id": 3,
             "name": "Portfolio",
             "display_name": "Portfolio",
             "github": "https://github.com/laurenyz/portfolio",
@@ -28,7 +41,7 @@
             "description": "As the name might suggest, this website's purpose is to showcase my portfolio of projects while showing a bit of my personality along the way. I wanted to create a very cohesive, clean website, so I chose to dig in a bit more to Material-UI."
         },
         {
-            "id": 3,
+            "id": 4,
             "name": "Stargazers",
             "display_name": "Stargazers",
             "demo_url": "https://youtu.be/hsCBoPEgrEU",
@@ -43,7 +56,7 @@
             "description": "A collaborative project that was built to explore the functionality of React, Stargazers is a site meant to connect users based on their love of planets, constellations, and astrological signs. Users can favorite specific constellations and planets, and they can search for other users with common interests."
         },
         {
-            "id": 4,
+            "id": 5,
             "name": "BounceAround",
             "display_name": "Bounce Around",
             "demo_url": "https://youtu.be/_mTqij0gKT4",
@@ -58,7 +71,7 @@
             "description": "A collaborative project that was built to explore the fundamentals of vanilla JavaScript and DOM manipulation. This is a basic game where users must draw barriers to get a ball from its initial start point to the end goal"
         },
         {
-            "id": 5,
+            "id": 6,
             "name": "Fetch",
             "display_name": "Fetch",
             "demo_url": "https://youtu.be/K99HVhMe1Vg",
@@ -71,7 +84,7 @@
             
         },
         {
-            "id": 6,
+            "id": 7,
             "name": "Zombo",
             "display_name": "Zombo",
             "github": "https://github.com/IdleScV/ZOMBO",
